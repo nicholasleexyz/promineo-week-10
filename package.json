@@ -1,0 +1,23 @@
+{
+  "name": "promineo-week-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas Lee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasleexyz/promineo-week-10.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicholasleexyz/promineo-week-10/issues"
+  },
+  "homepage": "https://github.com/nicholasleexyz/promineo-week-10#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5"
+  }
+}
