@@ -7,50 +7,12 @@
     <title>Week 10</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script defer src="index.js"></script>
 </head>
 
 <body>
-    <div class="container mb-3 mt-3">
-
-        <nav class="navbar navbar-dark bg-dark rounded">
-            <span class="navbar-brand mb-0 p-2 h1">Navbar</span>
-        </nav>
-
-        <div class="card mt-3 mb-3">
-            <table class="table" id="item-table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">#</th>
-                        <th scope="col">#</th>
-                        <th scope="col">#</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>mark</td>
-                        <td>otto</td>
-                        <td>asdfkj</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>sadfj</td>
-                        <td>asdf</td>
-                        <td>asdf</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>klfjas;df</td>
-                        <td>klfjas;df</td>
-                        <td>asdklfjas;df</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
     <div class="container mt-3 mb-3">
         <div class="card">
             <h3 class="card-header"><i class="bi bi-book"></i> Add Quest New Item</h3>
@@ -58,10 +20,10 @@
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="item-name">Item Name</span>
+                        <span class="input-group-text">Item Name</span>
                     </div>
                     <input type="text" class="form-control" placeholder="Item Name" aria-label="item-name"
-                        aria-describedby="item-name">
+                        aria-describedby="item-name" id="item-name">
                 </div>
 
                 <div class="input-group mb-3">
@@ -81,26 +43,26 @@
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="item-value">Item Value</span>
+                        <span class="input-group-text">Item Price</span>
                     </div>
-                    <input type="number" class="form-control" placeholder="10" step="1" min="0" aria-label="item-value"
-                        aria-describedby="item-value">
+                    <input type="number" class="form-control" placeholder="10" step="1" min="0" aria-label="item-price"
+                        aria-describedby="item-price" id="item-price">
                 </div>
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="item-description">Item Description</span>
+                        <span class="input-group-text">Item Description</span>
                     </div>
                     <input type="text" class="form-control" placeholder="Item Description" aria-label="item-description"
-                        aria-describedby="item-description">
+                        aria-describedby="item-description" id="item-description">
                 </div>
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="item-weight">Item Weight</span>
+                        <span class="input-group-text">Item Weight</span>
                     </div>
                     <input type="number" class="form-control" placeholder="0.5" step="0.1" min="0"
-                        aria-label="item-weight" aria-describedby="item-weight">
+                        aria-label="item-weight" aria-describedby="item-weight" id="item-weight">
                 </div>
 
                 <button type="button" class="btn-primary btn" id="button-add-item">Add Item</button>
@@ -108,7 +70,28 @@
         </div>
     </div>
 
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="container mb-3 mt-3">
+
+        <nav class="navbar navbar-dark bg-dark rounded">
+            <span class="navbar-brand mb-0 p-2 h1">Navbar</span>
+        </nav>
+
+        <div class="card mt-3 mb-3">
+            <table class="table" id="item-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Value</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Weight</th>
+                    </tr>
+                </thead>
+                <tbody id="item-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
